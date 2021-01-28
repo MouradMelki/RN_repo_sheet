@@ -1,0 +1,154 @@
+----------------REACT NATIVE----------------
+	- Init a project:
+	npx react-native init PROJECT_NAME
+
+	- Init project with expo:
+	expo init my-new-project
+	cd my-new-project
+	expo start
+
+	- Start the app on android:
+	npx react-native run-android
+
+	- Install expo package:
+	expo install expo
+
+	- Install expo-font package:
+	expo install expo-font
+
+	- Install react navigation:
+	npm install --save @react-navigation/native
+
+	- Install react-native screens to insure optimal navigation performance:
+	npm install --save react-native-screens
+
+	- Install React Native MaskedView so that react navigation stack can create the stack navigator
+	npm install --save @react-native-community/masked-view
+
+	- Install react native header button packge:
+	npm install --save react-navigation-header-buttons
+
+	- Multiple navigator to install:
+	npm install --save @react-navigation/stack
+	npm install --save @react-navigation/bottom-tabs
+	npm install --save @react-navigation/drawer
+
+	- Customize the drawer:
+	https://reactnavigation.org/docs/drawer-navigator/
+
+	- Material top tab navigator:
+	https://reactnavigation.org/docs/material-top-tab-navigator/
+
+	- Material bottom tab navigator:
+	https://reactnavigation.org/docs/material-bottom-tab-navigator/
+	npm install --save react-navigation-material-bottom-tabs
+
+	- Cross-platform Material Design for React Native:
+	https://callstack.github.io/react-native-paper/
+	npm install --save react-native-paper
+
+	- Install vector icons:
+	npm install --save @expo/vector-icons
+
+	- Install expo linear gradient:
+	npm install --save expo-linear-gradient
+	npm install react-native-linear-gradient --save
+
+	- Install redux for state management:
+	npm install --save redux react-redux
+
+	- Install redux thunk (used for http requests):
+	- Helps us handle asyncronus tasks and side effects
+	npm install --save redux-thunk
+
+	- Install redux dev tool:
+	npm install --save-dev redux-devtools-extension
+
+	- Install splash screen
+	npm i react-native-splash-screen --save
+
+	- Install react native gesture handle:
+	expo install react-native-gesture-handler
+
+	- Install react native reanimated
+	expo install react-native-reanimated
+
+	- Incase of error with react-native-safe-area-context:
+	npm install --save react-native-safe-area-context
+	npm install --save @react-native-community/masked-view
+
+	- Alternative third party validation libraries:
+	- https://validatejs.org/
+	npm install --save validate.js
+
+	- Alternative third party form libraries:
+	- https://github.com/jaredpalmer/formik
+	- https://jaredpalmer.com/formik/
+	npm install formik --save
+
+	- Date Manipulation:
+	-- some javascript function for date manipulation can work on some devices but on others no.
+	-- to solve this issue we can use a separate library called moment.js
+	-- DOCS: https://momentjs.com/docs/
+	npm install --save moment
+
+	- react-native-inset-shadow
+	npm i react-native-inset-shadow
+
+	- COMPONENTS TEMPLATES:
+		import React from 'react';
+		import {StyleSheet, View, Text} from 'react-native';
+
+		const StartGameScreen = props => {};
+
+		const styles = StyleSheet.create({});
+
+		export default StartGameScreen;
+
+	- Colors:
+	https://tilda.cc/colors/
+	https://htmlcolorcodes.com/
+
+	- Browse Icons:
+	https://expo.github.io/vector-icons/
+
+	- EXPO REFERENCE APIs:
+		- Camera:
+		expo install expo-camera
+		- Image Picker:
+		expo install expo-image-picker
+		- Permissions:
+		expo install expo-permissions
+		- FileSystem:
+		expo install expo-file-system
+		- SQLite
+		expo install expo-sqlite
+
+	$ adb devices
+	List of devices attached
+
+	-- CHANGING JAVA VERSION
+	First run /usr/libexec/java_home -V which will output something like the following:
+
+	Matching Java Virtual Machines (3):
+	1.8.0_05, x86_64:   "Java SE 8" /Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
+	1.6.0_65-b14-462, x86_64:   "Java SE 6" /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+	1.6.0_65-b14-462, i386: "Java SE 6" /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
+	Pick the version you want to be the default (1.6.0_65-b14-462 for arguments sake) then:
+
+	export JAVA_HOME=`/usr/libexec/java_home -v 1.6.0_65-b14-462`
+	or you can specify just the major version, like:
+
+	export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+-----------environment----------------------
+npm -v # v7.0.8
+yarn -v # v1.22.10
+node -v # v15.4.0
+watchman -v # 4.9.0
+
+sudo brew link --overwrite node
+
+	
