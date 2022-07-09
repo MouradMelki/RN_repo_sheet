@@ -9,8 +9,11 @@ Modify app_name in android/app/src/main/res/values/strings.xml
 then Run these commands one by one
 
 cd android
+
 ./gradlew clean
+
 cd ..
+
 react-native run-android
 
 <h2>For iOS<h2>
