@@ -35,9 +35,11 @@ nvm install &lt;version&gt;  <span class="hljs-comment"># Example: nvm install 1
 <h1>Changing a react app's name</h1>
 
 <h2>For Android</h2>
-    Modify displayName in app.json file Modify app_name in
-    android/app/src/main/res/values/strings.xml then Run these commands one by
-    one 
+  <p>
+    Modify displayName in app.json file 
+    Modify app_name in android/app/src/main/res/values/strings.xml 
+    then Run these commands one by one 
+  </p>
     
     cd android
     ./gradlew clean
